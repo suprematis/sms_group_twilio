@@ -10,7 +10,7 @@ def twilio_api_sms():
                 client = Client(account_sid, auth_token)
                 for number in array_numbers:
                         message = client.messages.create(
-                               from_='15107565042',
+                               from_='1xxxxxxxxxx',
                                body=body_input,
                                to=number
                           )
