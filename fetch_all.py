@@ -7,7 +7,7 @@ def query_with_fetchall():
         dbconfig = read_db_config()
         conn = MySQLConnection(**dbconfig)
         cursor = conn.cursor()
-        cursor.execute("SELECT * FROM address WHERE phone LIKE '+19252346209'")
+        cursor.execute("SELECT * FROM address WHERE phone LIKE '+1xxxxxxxxxx'")
         rows = cursor.fetchall()
 #       print('Total Row(s):', cursor.rowcount)
         for row in rows:
