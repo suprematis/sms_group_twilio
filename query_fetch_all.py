@@ -10,7 +10,7 @@ def query_with_fetchall():
 		conn = MySQLConnection(**dbconfig)
 		cursor = conn.cursor()
 # Narrowed SQL query to one number for specific purposes.	
-		cursor.execute("SELECT phone FROM address WHERE phone IN ('+19259614345','+19252346209');")
+		cursor.execute("SELECT phone FROM address WHERE phone IN ('+1xxxxxxxxxx','+1xxxxxxxxxx');")
 		rows = cursor.fetchall()
 		for row in rows:
 			array_num.append(row[0])
